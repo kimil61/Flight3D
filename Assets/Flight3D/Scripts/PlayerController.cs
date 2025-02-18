@@ -14,7 +14,7 @@ namespace Flight3D
         [Header("설정값들")]
         public float speed = 20.0f;
         public float rotationSpeed = 515f;
-        public float canFireSUperMissileTime = 0.2f;
+        public float canFireSuperMissileTime = 0.2f;
         
         private bool isRotating = false;
         private bool canFireSuperMissile = false;  // 슈퍼 미사일 발사 가능 여부
@@ -22,7 +22,6 @@ namespace Flight3D
         private void Start()
         {
             playerCollider = GetComponent<Collider>();
-
         }
 
         private void Update()
@@ -81,7 +80,7 @@ namespace Flight3D
 
             // ⭐ 0.2초 동안 슈퍼 미사일 모드 활성화 ⭐
             canFireSuperMissile = true;
-            yield return new WaitForSeconds(canFireSUperMissileTime);
+            yield return new WaitForSeconds(canFireSuperMissileTime);
             canFireSuperMissile = false;  // 0.2초 지나면 슈퍼 미사일 기회 사라짐
         }
         
