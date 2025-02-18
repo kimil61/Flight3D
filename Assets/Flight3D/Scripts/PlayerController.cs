@@ -18,7 +18,6 @@ namespace Flight3D
             newPosition.z = Mathf.Clamp(newPosition.z,-1,40);
             
             transform.position = newPosition;
-
         }
     }
 
