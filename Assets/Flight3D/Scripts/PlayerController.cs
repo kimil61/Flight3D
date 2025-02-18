@@ -19,8 +19,6 @@ namespace Flight3D
             
             transform.position = newPosition;
 
-
-
         }
     }
 
